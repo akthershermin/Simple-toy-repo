@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        
+        header {
+            background-color: maroon;
+            color: #fff;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 10px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 1;
+        }
+        footer {
+            background-color: maroon;
+            color: #fff;
+            padding: 5px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+         .colored-button {
+            background-color: Gray; /* Set the background color */
+            color: #fff; /* Set the text color */
+            padding: 20px 30px; /* Add padding */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add border radius */
+            cursor: pointer; /* Change cursor on hover */
+      
+        /* Change button style on hover */
+        .colored-button:hover {
+            background-color: #0056b3;
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>"Playing vs Programming a game" </h2>
+    </header>
+    <div class="container">
+       <p align = left> <a href="first.html">
+           <button class="colored-button" >Back</button>
+        </a> </p>
+        
+        <h2 color=red; > Guess a number between 0 and 100 </h2>
+        <input type="number" id="guess" placeholder="Enter your guess">
+        <button onclick="checkGuess()">Submit Guess</button>
+        <p id="message"></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Guess the Number. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for game functionality -->
+    <script>
+        // Generate a random number between 1 and 100
+        const secretNumber = Math.floor(Math.random() * 100) + 1;
+
+            
+        // Function to check the user's guess
+        function checkGuess() {
+            // Get the user's guess from the input field
+            const userGuess = parseInt(document.getElementById('guess').value);
+
+            // Check if the guess is correct
+            if (userGuess === secretNumber) {
+                alert(`Congratulations!`);
+            } else if (userGuess < secretNumber) {
+                alert(`Too low! Try a higher number.`);
+            } else {
+                alert(`Too high! Try a lower number.`);
+           }
+         
+        }
+    </script>
+
+</body>
+</html>
