@@ -75,17 +75,21 @@
     <script>
         // Generate a random number between 1 and 100
         const secretNumber = Math.floor(Math.random() * 100) + 1;
-                    
+        // Number of attempts
+        let attempts = 10;  
         // Function to check the user's guess
         function checkGuess() {
             // Get the user's guess from the input field
             const userGuess = parseInt(document.getElementById('guess').value);
-             
+      
+            // decrease the number of attempts
+             attempts --;
             // Check if the guess is correct
              if (userGuess > 100 || userGuess < 0) {
                alert(`Ooops! You have entered an invalid number!`);
             } else if (userGuess === secretNumber) {
-                alert(`Congratulations!`);
+                alert(`Congratulations!You guessed the number ${secretNumber} in ${10 - attempts} attempts`);
+
             } else if (userGuess < secretNumber) {
                 alert(`Too low! Try a higher number.`);
             } else {
