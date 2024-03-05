@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number - Instructions</title>
+    <style>
+        body {
+            font-family: Comic Sans MS, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        header {
+            background-color: maroon;
+            color: #fff;
+            padding: 5px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0px auto;
+            padding: 10 20px;
+            text-align: left;
+        }
+        p {
+            font-size: 14px;
+            line-height: 1;
+        }
+        
+        footer {
+            background-color: maroon;
+            color: #fff;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .colored-button {
+            background-color: Gray; /* Set the background color */
+            color: #fff; /* Set the text color */
+            padding: 10px 20px; /* Add padding */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add border radius */
+            cursor: pointer; /* Change cursor on hover */
+      
+        /* Change button style on hover */
+        .colored-button:hover {
+            background-color: #0056b3;
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>How to Play the Game</h1>
+    </header>
+    <div class="container">
+        <br><a href="game.html">
+           <button class="colored-button">Start Game</button>
+        </a>
+        <ol>
+            <li><strong>Aim of the Game:</strong>
+                <p>Your goal is to guess the secret number chosen by the computer.</p>
+            </li>
+            <li><strong>Getting Started:</strong>
+                <p>The game will randomly select a number between 1 and 100. You will be presented with an input field where you can enter your guess.</p>
+            </li>
+            <li><strong>Making a Guess:</strong>
+                <p>Enter your guess in the input field. Click the "Submit Guess" button to submit your guess.</p>
+            </li>
+            <li><strong>Feedback:</strong>
+                <p>After submitting your guess, the game will provide feedback indicating whether your guess is too low, or too high.
+                    
+                </p>
+            </li>
+            <li><strong>Keep Guessing:</strong>
+                <p>Keep guessing until you correctly identify the secret number or reached the maximum attempt of 10.</p>
+            </li>
+            
+        </ol>
+        <a href="first.html">
+           <button class="colored-button">Back</button>
+        </a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Guess the Number. All rights reserved.</p>
+    </footer>
+</body>
+</html>
