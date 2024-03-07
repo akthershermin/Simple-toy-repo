@@ -1,1 +1,2 @@
 This is an instruction file for playing the game
+Follow the instructions below to start the game:
