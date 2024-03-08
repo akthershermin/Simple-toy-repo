@@ -1,2 +1,3 @@
 This is the manual for instructing how to play the game
 You need a web browser to play this game
+To play the game you have to click on "Start game"
